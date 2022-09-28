@@ -1,0 +1,15 @@
+{
+  "name": "learngit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "- Cách đặt tên biến sao cho đúng:\r     + Hằng số thì viết in hoa\r     + Dùng để lấy giá trị true false thì đặt tên kiểu: is..., has... (Ex: isActive)\r     + Đặt tên hàm phải dùng động từ\r     + số nhiều phải thêm đuôi 'List'\r - Static type checking \r     + Cơ chế soát lỗi của typeScript\r - Explicit types vs Infered types\r     + Explicit types: khai báo dữ liệu kiểu tường minh\r     + Infered types: cơ chế tự nhận biết kiểu dữ liệu của typeScript\r     + Eraised types: khi compile từ ts sang js, tất cả annontation sẽ bị xóa\r - Strictness\r     + Strict flag: ? bắt lỗi : không bắt lỗi\r     + Option:\r         . nolmplicitAny: ? báo lỗi khi một biến không được khai báo kiểu dữ liệu và biến đó mang kiểu dữ liệu any : bỏ qua\r         . strictNullChecks: ? báo lỗi khi null/undefined được sử dụng không đúng : bỏ qua\r         . alwaysStrict: ? parse tất cả file ts ở strict mode ('use strict') \r - Primitive type ts\r     + Ex: 2 == '2' or 2 === '2' return false\r     + So sánh Object: Không thể so sánh 1 biến chứa object với 1 object được\r     + null == undefine // true, null == 0 // false, null >= 0 // true; vì khi null được so sánh >= 0 thì Number(null) để so sánh\r - falsy \r     |       0       |       -0      |       false       |\r     |      0n       |   \"\", '', ``  |       null        |\r     |   undefined   |      NaN      |   document.all    |\r - truthy != falsy \r - Literal types: chỉ định một giá trị cụ thể làm kiểu dữ liệu \r     + Dùng vs const: giá trị đc gán mặc định nên có kiểu dữ liệu chính bằng giá trị đc gán (const num = 1 // num: 1)\r     + Dùng vs let: (let num = 1 // num: number)\r - {} as const (chuyển các key: value trong obj thành readonly)\r - Type alias đặt tên mới cho kiểu dữ liệu\r - Interface : 1 tập hợp có các key, có thể được dùng để định nghĩa cho một mảng, hay một function  \r     + Object type: \r         . Khi có dấu ? sau key thì key đó có thể có hoặc không có cũng không xuất hiện lỗi\r     + Union type:\r         . 1 biến có thể có nhiều hơn 1 kiểu dữ liệu ngăn cách bằng dấu |\r     + Intersection type:\r         . Trong các interface, các key giống nhau cần phải có kiểu dữ liệu nhất quán\r     + Không dùng prefix I\r - Nên dùng interface khi có thể thay vì type\r - Default function return type:\r     + Khi không return thì ts tự hiểu hàm trả về kiểu dữ liệu void có thể hiệu là hàm ko có giá trị trả về",
+  "main": "cats.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}
