@@ -1,3 +1,6 @@
 import Dog from './dog.js';
-const dog = new Dog('Tom')
-dog.sayHi()
+import Cat from './cats.js';
+const dog = new Dog('bug')
+const meo = new Cat('mum')
+dog.eat(meo)
+console.log (dog)
